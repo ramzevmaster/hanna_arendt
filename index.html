@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La banalidad del mal - Hannah Arendt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #8b0000;
+            --accent-color: #dc143c;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.7;
+            padding-top: 76px;
+        }
+        .navbar { background-color: var(--primary-color) !important; }
+        .hero-section {
+            background: linear-gradient(rgba(26,26,26,0.8), rgba(139,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1580130718649-2c0a0e630e2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+            min-height: 85vh;
+            color: white;
+        }
+        .author-card { box-shadow: 0 5px 20px rgba(0,0,0,0.15); }
+        .card-header { background-color: var(--primary-color); color: white; }
+        .book-card { border-left: 5px solid var(--secondary-color); background: #fff; }
+        .sidebar { background-color: var(--primary-color); }
+        footer { background-color: var(--primary-color); }
+        .definition-card {
+            background: linear-gradient(135deg, #8b0000 0%, #dc143c 100%);
+            color: white;
+        }
+        .timeline::before { background-color: var(--secondary-color); }
+        .timeline-item::before {
+            background-color: var(--accent-color);
+            box-shadow: 0 0 0 4px var(--secondary-color);
+        }
+        .section-anchor { scroll-margin-top: 100px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-gavel me-2"></i>La banalidad del mal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section con Hannah Arendt -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold">La banalidad del mal</h1>
+                    <h2 class="display-6 mb-4">Eichmann en Jerusalén</h2>
+                    <p class="lead mb-4">
+                        «El mal más terrible puede ser cometido sin odio ni intención malévola, simplemente por la renuncia a pensar y a juzgar por uno mismo.»
+                    </p>
+                    <div class="definition-card p-4 rounded">
+                        <h3>Hannah Arendt (1906-1975)</h3>
+                        <p>Filósofa política alemana de origen judío. Su informe sobre el juicio a Adolf Eichmann en 1961 dio origen a una de las tesis más revolucionarias y polémicas del siglo XX: la banalidad del mal.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="arendt.jpg" 
+                         alt="Hannah Arendt" class="img-fluid rounded shadow-lg" style="max-height: 550px;">
+                    <p class="mt-3 text-light"><em>Hannah Arendt</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+
+        <!-- 1. Contexto del libro -->
+        <div class="row mb-5 section-anchor" id="contexto">
+            <div class="col-12">
+                <div class="card author-card">
+                    <div class="card-header"><h3>1. Contexto del libro</h3></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-4">
+                                <img src="eichmann_juicio.jpg" 
+                                     alt="Adolf Eichmann" class="img-fluid rounded">
+                                <p class="mt-2"><em>Adolf Eichmann durante el juicio, 1961</em></p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Publicado en 1963 como serie de artículos en <em>The New Yorker</em> y luego en libro con el subtítulo “Un informe sobre la banalidad del mal”.</p>
+                                <p>Arendt asistió al juicio de Adolf Eichmann en Jerusalén (1961), secuestrado en Argentina por el Mossad y juzgado en Israel por crímenes contra la humanidad.</p>
+                                <p>Eichmann fue el responsable logístico de la “Solución Final”: organizó el transporte de millones de judíos a los campos de exterminio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Tesis central -->
+        <div class="row mb-5 section-anchor" id="tesis">
+            <div class="col-12">
+                <div class="card author-card">
+                    <div class="card-header"><h3>2. Tesis central: la banalidad del mal</h3></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-4">
+                                <img src="eichmann_cabina.jpg" 
+                                     alt="Eichmann en la cabina de cristal" class="img-fluid rounded">
+                                <p class="mt-2"><em>Eichmann en la cabina de cristal blindada durante el juicio</em></p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Arendt esperaba un monstruo fanático. Encontró a un burócrata gris, obediente, sin odio visceral.</p>
+                                <p>Eichmann no era un psicópata ni un ideólogo convencido: era un funcionario diligente que “cumplía órdenes” y hablaba en clichés nazis vacíos.</p>
+                                <p class="fw-bold">Conclusión: el mal más destructivo no requiere maldad extraordinaria, sino la incapacidad de pensar y juzgar por uno mismo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Críticas al juicio -->
+        <div class="row mb-5 section-anchor" id="juicio">
+            <div class="col-12">
+                <div class="card author-card">
+                    <div class="card-header"><h3>3. Críticas al juicio y al espectáculo político</h3></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-4">
+                                <img src="eichmann_sala.jpg" 
+                                     alt="Sala del juicio" class="img-fluid rounded">
+                                <p class="mt-2"><em>Sala del juicio en Jerusalén, 1961</em></p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Arendt vio el juicio como un “show” organizado por David Ben-Gurión para legitimar al Estado de Israel y educar a la juventud.</p>
+                                <p>Criticó al fiscal Gideon Hausner por intentar juzgar toda la historia del antisemitismo en lugar de los actos concretos de Eichmann.</p>
+                                <p>Cuestionó la legalidad del secuestro y la jurisdicción israelí.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Los consejos judíos -->
+        <div class="row mb-5 section-anchor" id="judenrate">
+            <div class="col-12">
+                <div class="card author-card">
+                    <div class="card-header"><h3>4. El papel de los consejos judíos (Judenräte)</h3></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-4">
+                                <img src="gueto_lodz.jpg" 
+                                     alt="Judenrat en el gueto de Lodz" class="img-fluid rounded">
+                                <p class="mt-2"><em>Miembros del Judenrat en el gueto de Lodz</em></p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Capítulo más polémico: muchos líderes judíos colaboraron elaborando listas y organizando deportaciones con la ilusión de salvar a una parte de la comunidad.</p>
+                                <p>Arendt no los acusa de traición moral absoluta, pero señala que esa colaboración facilitó enormemente la tarea nazi.</p>
+                                <p class="fst-italic">«Dondequiera que los judíos vivieron en comunidades organizadas hubo cooperación».</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Reflexiones filosóficas -->
+        <div class="row mb-5 section-anchor" id="reflexiones">
+            <div class="col-12">
+                <div class="card author-card">
+                    <div class="card-header"><h3>5. Reflexiones filosóficas finales</h3></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-4">
+                                <img src="arendt_joven.jpg" 
+                                     alt="Hannah Arendt joven" class="img-fluid rounded">
+                                <p class="mt-2"><em>Hannah Arendt en 1933</em></p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>El totalitarismo destruye la capacidad de juicio moral individual.</p>
+                                <p>La obediencia ciega y la “normalidad” de los ejecutores son más peligrosas que el fanatismo.</p>
+                                <p class="fw-bold">El pensamiento crítico y la responsabilidad personal son la única defensa contra el mal banal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Recepción y controversia -->
+        <div class="row mb-5 section-anchor" id="controversia">
+            <div class="col-12">
+                <div class="card author-card">
+                    <div class="card-header"><h3>6. Recepción y controversia</h3></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-4">
+                                <img src="carta.png" 
+                                     alt="Carta de Gershom Scholem a Arendt" class="img-fluid rounded">
+                                <p class="mt-2"><em>Carta de Gershom Scholem reprochando a Arendt su falta de Ahavat Israel</em></p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Arendt fue acusada de:</p>
+                                <ul>
+                                    <li>Minimizar la culpa de Eichmann</li>
+                                    <li>Culpar a las víctimas judías</li>
+                                    <li>Falta de “amor al pueblo judío” (Ahavat Israel)</li>
+                                </ul>
+                                <p>Perdió amistades (Gershom Scholem, Kurt Blumenfeld) y sufrió campañas de difamación.</p>
+                                <p>Con el tiempo, la tesis de la banalidad del mal se convirtió en un concepto clave de la filosofía política del siglo XX.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-white">
+                    <h5 class="text-white">La banalidad del mal – Hannah Arendt (1963)</h5>
+                    <p class="text-white">Una meditación filosófica sobre cómo personas “normales” pueden participar en crímenes monstruosos sin sentirse monstruos.</p>
+                </div>
+                <div class="col-md-4 text-md-end text-white">
+                    <p>© 2025 – Recursos sobre pensamiento político</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
